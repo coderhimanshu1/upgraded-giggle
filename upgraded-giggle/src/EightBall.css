@@ -13,3 +13,11 @@
   border-radius: 60%;
   box-shadow: 5px 5px 10px rgb(106, 104, 104);
 }
+
+.EightBall-btn {
+  margin-left: 130px;
+  background-color: rgb(237, 74, 10);
+  color: white;
+  font-size: 17px;
+  padding: 0.5% 1%;
+}

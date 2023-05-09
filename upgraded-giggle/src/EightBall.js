@@ -14,15 +14,24 @@ const EightBall = (props) => {
     setMessage(msg);
     setColor(color);
   };
+  const restart = () => {
+    setMessage("Think of a Question");
+    setColor("black");
+  };
 
   return (
-    <div
-      className="EightBall"
-      style={{ backgroundColor: color }}
-      onClick={handleClick}
-    >
-      <h2>{message}</h2>
-    </div>
+    <>
+      <div
+        className="EightBall"
+        style={{ backgroundColor: color }}
+        onClick={handleClick}
+      >
+        <h2>{message}</h2>
+      </div>
+      <button className="EightBall-btn" onClick={restart}>
+        Reset
+      </button>
+    </>
   );
 };
 
